@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="birthday">When is your birthday?</label>
+    <input type="date" id="birthday" name="birth" value="2021-12-22" min="1910-12-31" max="2020-12-31">
+    <h3>Your Birthdate:</h3>
+    <p>yy-mm-dd</p>
+    </form>
+    <button onclick="buttonAction()">GetDate</button>
+    <script>
+        var date=document.querySelector('input[type="date"');
+        var paragraph=document.querySelector('p');
+        function buttonAction(){
+            paragraph.textContent=date.value;
+        }
+    </script>
+</body>
+</html>
